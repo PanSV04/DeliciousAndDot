@@ -1,0 +1,631 @@
+/*Основа документа*/
+
+@import "fonts.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: 'Comfortaa-Regular';
+  font-size: 16px;
+  line-height: auto;
+  font-weight: normal;
+  letter-spacing: 0px;
+  background-color: white;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'Comfortaa-Bold';
+  font-size: 40px;
+  color: black;
+
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Comfortaa-SemiBold';
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Comfortaa-Bold';
+  font-size: 24px;
+  color: #CC5600;
+  text-align: center;
+}
+
+h5 {
+  font-family: 'Comfortaa-Bold';
+  font-size: 20px;
+  color: white;
+  line-height: 140%;
+  text-align: center;
+}
+
+h6 {
+  font-family: 'Comfortaa-SemiBold';
+  font-size: 16px;
+  color: black;
+  line-height: 140%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+
+  font-family: 'Comfortaa-SemiBold';
+  font-size: 18px;
+  line-height: 140%;
+  color: black;
+}
+
+img {
+  pointer-events: none;
+  border: none;
+  margin: 0;
+  display: block;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container__menu {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  font-size: 0;
+}
+
+section {
+  margin-bottom: 120px;
+}
+
+.block__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: #CC5500;
+
+  margin-bottom: 25px;
+  padding: 15px 50px;
+  border-radius: 100px;
+
+  font-family: 'Comfortaa-Regular';
+  font-weight: normal;
+  font-size: 20px;
+  color: #ffffff;
+
+  transition: 0.3s;
+}
+
+.btn:hover {
+  box-shadow: -4px 6px 0px #7F3900;
+
+  cursor: pointer;
+}
+
+.page__title-sec {
+  margin: 0;
+}
+
+.page__title {
+  background-color: #FFA500;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 70px;
+}
+
+
+/*--------------------------шапка--------------------------*/
+
+.header__up {
+  background-color: #FFD46C;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px 15px;
+}
+
+.header__small_box {
+  display: grid;
+  align-items: center;
+  grid-template-columns: max-content max-content;
+  gap: 5px;
+}
+
+.phone__small {
+  background-image: url(../image/phone.png);
+  height: 12px;
+  width: 12px;
+  background-repeat: no-repeat;
+
+  transition: .2s;
+}
+
+.mail__small {
+  background-image: url(../image/mail.png);
+  height: 12px;
+  width: 15px;
+  background-repeat: no-repeat;
+
+  transition: .2s;
+}
+
+.contact__small {
+  color: #DE001F;
+  font-size: 14px;
+  line-height: 100%;
+
+  transition: .2s;
+}
+
+.header__small_box:hover .contact__small {
+  color: black;
+  cursor: pointer;
+} 
+
+.header__small_box:hover .mail__small {
+  background-image: url(../image/mail__hover.png);
+}
+
+.header__small_box:hover .phone__small {
+  background-image: url(../image/phone__hover.png);
+}
+
+.text_class {
+  font-family: 'Comfortaa-Regular';
+  font-size: 15px;
+}
+
+.header {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo_box {
+  display: flex;
+}
+
+.image_box {
+  display: flex;
+}
+
+.cart {
+  background-image: url(../image/cart.png);
+  background-repeat: no-repeat;
+
+  width: 28px;
+  height: 28px;
+
+  transition: .3s;
+}
+
+.cart:hover {
+  background-image: url(../image/cart_active.png);
+
+  width: 28px;
+  height: 28px;
+}
+
+.logo_text_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 13px;
+}
+
+.logo_text_1 {
+  font-family: 'Comfortaa-Bold';
+  font-size: 28px;
+  line-height: 94%;
+
+  margin-bottom: 6px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #CC5500;
+}
+
+.logo_text_2 {
+  font-family: 'OriginalSurfer';
+  font-size: 24px;
+  line-height: 76%;
+
+  text-decoration: none;
+  color: #FFA500;
+}
+
+.header_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_link {
+  font-family: 'Comfortaa-Bold';
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  margin: 0 25px;
+  border-bottom: 2px solid transparent;
+  padding-top: 6px;
+  padding-bottom: 4px;
+
+  transition: .5s;
+}
+
+.nav_link:hover {
+  border-bottom: 2px solid #CC5600;
+  margin: 0 25px;
+  color: #CC5600;
+
+  cursor: pointer;
+}
+
+.profile {
+  background-image: url(../image/prof.png);
+  background-repeat: no-repeat;
+
+  width: 28px;
+  height: 28px;
+  padding: 6px 14px;
+  position: relative;
+  z-index: 1;
+
+  transition: .3s;
+}
+
+.profile:hover {
+  background-image: url(../image/профиль.png);
+
+  width: 28px;
+  height: 28px;
+}
+
+.header__profile {
+  display: inline-block;
+  position: relative;
+  width: 28px;
+  z-index: 10;
+}
+
+.header__profile-block {
+  background-color: #FFD46C;
+  border-radius: 25px 0 25px 25px;
+  height: 170px;
+  width: 200px;
+
+  display: none;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
+
+  position: absolute;
+  top: 22px;
+  right: -8px;
+
+  transition: 1s
+}
+
+.prof__width {
+  height: 100px;
+}
+
+.header__profile-icon-block {
+  margin-top: -36px;
+  background-color: #FFD46C;
+  height: 36px;
+  width: 44px;
+  border-radius: 30px 30px 0 0;
+}
+
+.header__profile-name {
+  font-family: 'Comfortaa-Bold';
+  color: #DE001F;
+  margin-top: 12px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.header__profile-number {
+  color: #CC5600;
+  font-size: 14px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.header__profile-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.header__profile-line {
+  width: 180px;
+  height: 1px;
+  background-color: #FFA500;
+  margin-right: 10px;
+}
+
+.header__profile-point {
+  font-family: 'Comfortaa-SemiBold';
+  font-size: 14px;
+  line-height: 115%;
+  color: #CC5600;
+
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+
+  transition: .3s;
+}
+
+.header__profile-point:hover {
+  color: #DE001F;
+  font-family: 'Comfortaa-Bold';
+  font-size: 16px;
+
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.header__profile-city-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 8px;
+}
+
+.header__profile-city {
+  font-family: 'Comfortaa-Bold';
+  color: #CC5600;
+  font-size: 16px;
+  margin-right: 5px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.header__profile-arrow {
+  background-image: url(../image/prof__arrow.png);
+  background-repeat: no-repeat;
+  width: 9px;
+  height: 6px;
+  margin-bottom: 4px
+}
+
+.header__profile:hover .header__profile-block {
+  display: flex;
+  width: 200px;
+}
+
+.prof__btn {
+  font-family: 'Comfortaa-SemiBold';
+  font-size: 16px;
+  color: white;
+  border-radius: 100px;
+  background-color: #FFA500;
+  border: 2px solid white;
+
+  padding: 6px 25px;
+  margin: 10px 35px 10px;
+  transition: .3s;
+}
+
+.prof__btn:hover {
+  box-shadow: -4px 4px 0 #DE001F;
+  border: 2px solid #DE001F;
+
+  color: #DE001F;
+  cursor: pointer;
+}
+
+.prof__marg {
+  margin-right: 35px;
+  margin-top: 10px;
+}
+
+
+
+
+/*-------------------------Подвал---------------------------*/
+
+
+
+
+footer {
+  background-color: #ffbd44;
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 60px 0;
+}
+
+.footer__info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.footer__title {
+  font-family: 'Comfortaa-Regular';
+  color: black;
+  margin-right: 60px;
+}
+
+.margin__right {
+  margin-right: 32px;
+}
+
+.margin__bottom {
+  margin-bottom: 60px;
+}
+
+.footer__contact {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer__column {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer__point {
+  font-family: 'Comfortaa-SemiBold';
+  line-height: 95%;
+  font-size: 16px;
+  color: black;
+
+  transition: .3s;
+}
+
+.footer__point:hover {
+  color: white;
+}
+
+.footer__circle {
+  background-color: #DE001F;
+  border-radius: 100px;
+  width: 6px;
+  height: 6px;
+}
+
+.footer__number {
+  font-family: 'Comfortaa-SemiBold';
+  font-size: 35px;
+  line-height: 95%;
+  color: white;
+}
+
+.footer__mail-txt {
+  font-family: 'Comfortaa-SemiBold';
+  font-size: 30px;
+  color: white;
+
+  transition: .3s;
+}
+
+.footer__mail-txt:hover {
+  color: #DE001F;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soc__icon {
+  background-image: url(../image/inst.png);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+
+  transition: .3s;
+}
+
+.face {
+  background-image: url(../image/face.png);
+}
+
+.vk {
+  background-image: url(../image/vk.png);
+}
+
+.app {
+  background-image: url(../image/app.png);
+  margin: 0;
+}
+
+.mail {
+  background-image: url(../image/email.png);
+}
+
+.soc__icon:hover {
+  background-image: url(../image/inst__active.png);
+}
+
+.face:hover {
+  background-image: url(../image/facebook__active.png);
+}
+
+.vk:hover {
+  background-image: url(../image/vk__active.png);
+}
+
+.app:hover {
+  background-image: url(../image/app__active.png);
+}
+
+.mail:hover {
+  background-image: url(../image/mail__active.png);
+}
+
+.not__margin {
+ margin: 0 0 0 0;
+}

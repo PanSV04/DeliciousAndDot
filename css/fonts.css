@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Comfortaa-Regular';
+    font-style: normal;
+
+    src: url(./../fonts/Comfortaa-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Comfortaa-Bold';
+    font-style: normal;
+
+    src: url(./../fonts/Comfortaa-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Comfortaa-SemiBold';
+    font-style: normal;
+
+    src: url(./../fonts/Comfortaa-SemiBold.ttf);
+}
+
+
+@font-face {
+    font-family: 'Comfortaa-Light';
+    font-style: normal;
+
+    src: url(./../fonts/Comfortaa-Light.ttf);
+}
+
+@font-face {
+    font-family: 'OriginalSurfer';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url(./../fonts/OriginalSurfer-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'PD-Italic';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url(./../fonts/PlayfairDisplay-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'PD-Regular';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url(./../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'PD-SemiBold';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url(./../fonts/PlayfairDisplay-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'PD-ItalicBold';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url(./../fonts/PlayfairDisplay-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'PD-Bold';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url(./../fonts/PlayfairDisplay-Bold.ttf);
+}

@@ -1,0 +1,96 @@
+@import url('fonts.css');
+
+
+::selection {
+    color: #fff;
+    background: #007EDA;
+}
+
+.price-input {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-input .field {
+    display: flex;
+    align-items: center;
+}
+
+.field input {
+    font-family: 'Comfortaa-SemiBold';
+    font-size: 18px;
+    line-height: 70%;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #007EDA;
+    width: 110px;
+    padding: 10px 30px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.price-input .separator {
+    width: 130px;
+    display: flex;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    height: 3px;
+    position: relative;
+    background: #d8d8d8;
+    border-radius: 5px;
+
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.slider .progress {
+    height: 100%;
+    left: 5%;
+    right: 65%;
+    position: absolute;
+    border-radius: 5px;
+    background: #007EDA;
+}
+
+.range-input {
+    position: relative;
+}
+
+.range-input input {
+    position: absolute;
+    width: 100%;
+    top: -57px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    height: 30px;
+    width: 30px;
+    background-image: url('../image/donut.png');
+    border-radius: 50%;
+    
+    pointer-events: auto;
+    -webkit-appearance: none;
+   
+}
+
+/* input[type="range"]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #007EDA;
+    pointer-events: auto;
+    -moz-appearance: none;
+} */
